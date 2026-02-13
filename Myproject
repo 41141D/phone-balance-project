@@ -1,0 +1,22 @@
+#while the assignment tips say that we should only type down the phone balance and the cost as variables i also think that we should know first if the user wants to call
+#i personally thought that the code without the line below would have felt a little vague.
+phone = input("do you wanna phone someone (yes or no): ")
+# a balance variable here as well because if the user said no then we will just say that his balance is zero to remind them that they are poor
+balance = 0
+#then i felt like adding conditions to our code of course we wouldn't have needed it if we just had 2 variables (balance and cost)
+if phone.lower() == "yes":
+    # the user then enters the balance
+    balance = float(input("please input your balance: "))
+    # and the cost as well
+    cost = float(input("please input your cost: "))
+    #the math should be right though that is why we used IF here so the users balance is more than the calls cost otherwise we would call them poor
+    if balance >= cost:
+        remaining = balance - cost
+        print("your balance is: ", remaining)
+    #an else here if the user is poor like me.
+    else:
+        print("oof you are poor you can't call anyone and no one cares")
+#another else because what if the user chose no we can also say elif phone == "no" but yea
+else:
+    print(f"well have a great day then mate your balance stays the same Balance : {balance}")
+input("press enter key to exit")
