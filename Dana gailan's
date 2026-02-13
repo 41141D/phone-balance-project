@@ -1,0 +1,11 @@
+# 1- Asks the user to enter the current phone balance and converts it to a float
+balance = float(input("Enter your balance: "))
+
+# 2- Asks the user to enter the cost of a call and converts it to a float
+cost = float(input("Enter the cost of the call: "))
+
+# 3- Calculates the remaining balance by subtracting cost from the current balance
+remaining_balance = balance - cost
+
+# 4- Prints the final remaining balance calculation to the user
+print("The remaining balance is:", remaining_balance)
